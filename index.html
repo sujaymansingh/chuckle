@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Which Chuckle Brother are you?</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
+    <style>
+body {
+  padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Which Chuckle Brother are you?</a>
+        </div>
+        <div class="collapse navbar-collapse">
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row" id="questionPanel">
+            <div class="col-md-12">
+                <h1 id="question">Question</h1>
+            </div>
+            <div class="col-md-6 center-block">
+                <button id="answer1" class="answer btn-lg btn-primary">Test</button>
+            </div>
+            <div class="col-md-6 center-block">
+                <button id="answer2" class="answer btn-lg btn-primary">Test</button>
+            </div>
+        </div>
+
+        <div class="hide" id="questions">
+            [
+                {
+                    "question": "Are you quick to trust others?",
+                    "answer1": "Yes",
+                    "answer2": "Oh dear no"
+                },
+                {
+                    "question": "Do you like to try new things?",
+                    "answer1": "No",
+                    "answer2": "Oh dear yes"
+                },
+                {
+                    "question": "When moving a wardrobe, would you say:",
+                    "answer1": "To you!",
+                    "answer2": "To me!",
+                    "final": true
+                }
+            ]
+        </div>
+
+
+
+        <div class="row result" id="paul" style="display: none">
+            <div class="col-md-5">
+                <img src="paul.jpeg"/>
+            </div>
+            <div class="col-md-7">
+                <h1>You are Paul!</h1>
+                <h2>You are:</h2>
+                <ul>
+                    <li><h3>Fiercely loyal to your friends</h3></li>
+                    <li><h3>Taller than the other one</h3></li>
+                    <li><h3>Likely to say &quot;to you&quot;</h3></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row result" id="barry" style="display: none">
+            <div class="col-md-7">
+                <h1>You are Barry!</h1>
+                <h2>You are:</h2>
+                <ul>
+                    <li><h3>Clumsy but kind hearted</h3></li>
+                    <li><h3>Shorter than the other one</h3></li>
+                    <li><h3>Likely to say &quot;to me&quot;</h3></li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <img src="barry.jpeg"/>
+            </div>
+        </div>
+
+
+        <div class="row result" id="tryAgain" style="display: none">
+            <div class="col-md-12"><button id="tryAgainButton" class="btn-primary btn-lg">Try again!</button></div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
