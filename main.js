@@ -52,6 +52,7 @@ $(function() {
     $("#tryAgainButton").click(function() {
         $(".result").hide();
         $("#questionPanel").show();
+        $(".answer").off("click");
         setQuestion(0);
     });
 });
